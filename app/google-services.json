@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901410356731",
+    "project_id": "chessonline-5008e",
+    "storage_bucket": "chessonline-5008e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901410356731:android:c4f2e66f67ccce7d9d5f5e",
+        "android_client_info": {
+          "package_name": "com.example.chessonline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4wvT2LQ7ZlJnAxHRmnR_gFv_p1dWEZxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

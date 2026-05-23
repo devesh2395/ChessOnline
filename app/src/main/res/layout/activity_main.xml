@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1E1E1E"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chess Online"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:paddingBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Create Game"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="— or join with a code —"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etRoomCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Room code"
+        android:inputType="textCapCharacters"
+        android:maxLength="6"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:letterSpacing="0.3"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Join Game"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:paddingTop="24dp"
+        android:gravity="center"/>
+
+</LinearLayout>
