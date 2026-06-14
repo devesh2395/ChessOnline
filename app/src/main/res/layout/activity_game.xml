@@ -4,45 +4,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:fitsSystemWindows="true"
     android:background="#1E1E1E">
 
+    <!-- Top bar: room code + settings -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:padding="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tvRoomCode"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Room: "
+            android:layout_weight="1"
             android:textColor="#AAAAAA"
             android:textSize="14sp"/>
 
-        <TextView
-            android:id="@+id/tvRoomCode"
+        <Button
+            android:id="@+id/btnSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:letterSpacing="0.3"/>
+            android:text="⚙"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="#AAAAAA"/>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connecting..."
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:paddingBottom="8dp"/>
-
-    <com.example.chessonline.ChessBoardView
-        android:id="@+id/chessBoardView"
+    <!-- Centered game area -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Opponent's captured pieces (top) -->
+        <TextView
+            android:id="@+id/tvCapturedTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#DDDDDD"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:minHeight="28dp"/>
+
+        <!-- Chess board -->
+        <com.example.chessonline.ChessBoardView
+            android:id="@+id/chessBoardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- My captured pieces (bottom) -->
+        <TextView
+            android:id="@+id/tvCapturedBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#DDDDDD"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:minHeight="28dp"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connecting..."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Board Colors"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <!-- Light Square -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Light Square"
+                android:textColor="#CCCCCC" android:textSize="16sp"/>
+            <View android:id="@+id/swatchLight"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="12dp"/>
+            <Button android:id="@+id/btnLightSquare"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Change" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Dark Square -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Dark Square"
+                android:textColor="#CCCCCC" android:textSize="16sp"/>
+            <View android:id="@+id/swatchDark"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="12dp"/>
+            <Button android:id="@+id/btnDarkSquare"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Change" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Highlight Color -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Highlight / Move Dots"
+                android:textColor="#CCCCCC" android:textSize="16sp"/>
+            <View android:id="@+id/swatchSelected"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="12dp"/>
+            <Button android:id="@+id/btnSelected"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Change" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piece Colors"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <!-- White Pieces -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="White Pieces"
+                android:textColor="#CCCCCC" android:textSize="16sp"/>
+            <View android:id="@+id/swatchWhitePiece"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="12dp"/>
+            <Button android:id="@+id/btnWhitePiece"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Change" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Black Pieces -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Black Pieces"
+                android:textColor="#CCCCCC" android:textSize="16sp"/>
+            <View android:id="@+id/swatchBlackPiece"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="12dp"/>
+            <Button android:id="@+id/btnBlackPiece"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Change" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Reset -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset to Defaults"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Live Preview -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"/>
+
+        <com.example.chessonline.ChessBoardView
+            android:id="@+id/previewBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

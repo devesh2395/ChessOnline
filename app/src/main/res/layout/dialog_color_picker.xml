@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Color preview -->
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Preset swatches row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <View android:id="@+id/preset1"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset2"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset3"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset4"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset5"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset6"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset7"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset8"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset9"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_marginEnd="3dp"/>
+        <View android:id="@+id/preset10"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Red slider -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+        <TextView android:layout_width="20dp" android:layout_height="wrap_content"
+            android:text="R" android:textColor="#FF4444" android:textStyle="bold"/>
+        <SeekBar android:id="@+id/sbRed"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="8dp"/>
+        <TextView android:id="@+id/tvRed"
+            android:layout_width="36dp" android:layout_height="wrap_content"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Green slider -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+        <TextView android:layout_width="20dp" android:layout_height="wrap_content"
+            android:text="G" android:textColor="#44BB44" android:textStyle="bold"/>
+        <SeekBar android:id="@+id/sbGreen"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="8dp"/>
+        <TextView android:id="@+id/tvGreen"
+            android:layout_width="36dp" android:layout_height="wrap_content"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Blue slider -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:layout_width="20dp" android:layout_height="wrap_content"
+            android:text="B" android:textColor="#4488FF" android:textStyle="bold"/>
+        <SeekBar android:id="@+id/sbBlue"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="8dp"/>
+        <TextView android:id="@+id/tvBlue"
+            android:layout_width="36dp" android:layout_height="wrap_content"
+            android:gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>
