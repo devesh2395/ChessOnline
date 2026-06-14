@@ -269,7 +269,7 @@ public class ChessBoardView extends View {
         legalDests.clear();
         invalidate();
     }
-
+//commenting for third commit.
     // ── FEN parser ───────────────────────────────────────────────────────
     public static String[][] fenToArray(String fen) {
         String[][] arr = new String[8][8];
